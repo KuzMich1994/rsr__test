@@ -45,3 +45,16 @@ img
   display: none !important
 .scroll-hidden
   overflow: hidden
+.animate
+  position: relative
+  animation: animate-text 2s ease 1
+  white-space: nowrap
+  overflow: hidden
+  max-height: 22px
+@keyframes animate-text
+  0%
+    width: 20%
+    opacity: 0
+  100%
+    width: 100%
+    opacity: 1
