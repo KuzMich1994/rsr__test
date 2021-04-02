@@ -1,0 +1,95 @@
+@media ( max-width: 576px )
+  .header
+    &__wrapper
+      left: 20%
+  .main
+    &__slide
+      &-title
+        margin-bottom: 10px
+        font-size: 24px
+      &-subtitle
+        font-size: 15px
+        line-height: 19px
+      &-button
+        font-size: 14px
+  .facts
+    background-position: -120px
+    &__title
+      font-size: 23px
+      margin-bottom: 30px
+  .catalog
+    &__title
+      font-size: 30px
+    &__top
+      &-arrow
+        width: 25px
+        height: 15px
+      &-text
+        font-size: 14px
+        line-height: 20px
+    &__card
+      height: 220px
+      &-bg
+        &_small
+          object-fit: contain
+      &-title
+        max-width: 270px
+        font-size: 20px
+        line-height: 24px
+      &-description
+        max-width: 250px
+  .team
+    &__title
+      font-size: 19px
+    &__description
+      font-size: 14px
+    &__bottom
+      flex-direction: column
+      &-initials
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-name
+          font-size: 19px
+          line-height: 24px
+        &-position
+          font-size: 14px
+          text-align: center
+      &-signature
+        margin-top: 20px
+        max-width: 120px
+  .activity
+    padding-top: 50px
+    padding-bottom: 60px
+    &__text
+      &-title
+        margin-bottom: 30px
+        font-size: 24px
+        line-height: 28px
+      &-description
+        font-size: 14px
+        line-height: 20px
+      &-training
+        font-size: 16px
+        line-height: 23px
+    &__handler
+      margin-bottom: 20px
+      &-date
+        font-size: 17px
+        line-height: 21px
+    &__calendar
+      padding: 15px
+      max-width: 294px
+      &-days
+        max-height: 168px
+      &-day, &-next-date, &-prev-date
+        // width: 50px
+        max-width: calc( 26.2em / 14 )
+        flex-wrap: nowrap
+        height: 33px
+        // height: 32px
+  .footer
+    &::after
+      bottom: 140px
+    &__policy
+      text-align: center

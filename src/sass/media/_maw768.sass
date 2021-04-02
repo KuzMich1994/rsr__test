@@ -1,0 +1,240 @@
+@media ( max-width: 768px )
+  .container
+    width: 92%
+  .header
+    padding-top: 20px
+    &::after
+      display: none
+    &__overlay
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      display: none
+      z-index: 999
+      height: 100vh
+      background-color: rgba(0, 0, 0, .65)
+      &_active
+        display: block
+    &__wrapper
+      position: fixed
+      top: 0
+      left: 50%
+      right: 0
+      bottom: 0
+      transform: translateX(500px)
+      padding-right: 30px
+      padding-top: 50px
+      height: 100vh
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      // justify-content: center
+      background-color: #fff
+      z-index: 999
+      overflow-y: auto
+      transition: .5s
+      &_active
+        transition: .5s
+        transform: translateX(0)
+        left: 50%
+    &__top
+      margin-top: 20px
+      flex-direction: column-reverse
+      align-items: flex-end
+      justify-content: flex-start
+      order: 2
+      &-social
+        &-link
+          width: 30px
+          height: 30px
+    &__bottom
+      flex-direction: column
+      align-items: flex-end
+    &__navbar
+      margin: 0
+    &__list
+      margin-top: 20px
+      margin-bottom: 10px
+      flex-direction: column
+      align-items: flex-end
+      &-item
+        font-size: 18px
+        line-height: 22px
+        margin-bottom: 10px
+    &__account
+      padding: 14px 24px 14px 27px
+    &__langs
+      margin-bottom: 10px
+      font-size: 22px
+      line-height: 26px
+      &::after
+        top: 14px
+      &-list
+        top: 27px
+        &_active
+          height: 75px
+    &__search
+      margin: 0
+      margin-bottom: 10px
+      // max-width: 109px
+      &-input
+        width: 100%
+        border: 1px solid #999999
+        border-radius: 12px
+        padding-right: 10px
+        padding-left: 10px
+        height: 30px
+        &::placeholder
+          font-size: 18px
+          line-height: 19px
+    &__visually
+      flex-direction: column
+      align-items: flex-end
+      max-width: 200px
+      margin: 0
+      font-size: 19px
+      margin-bottom: 10px
+      &-icon
+        margin-right: 0
+        margin-bottom: 10px
+      &-text
+        text-align: right
+    &__mobile
+      &-menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+      &-close
+        position: absolute
+        top: 30px
+        left: 30px
+        width: 25px
+        height: 25px
+        background: url(../img/close.svg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        z-index: 999
+    &__button
+      position: relative
+      width: 35px
+      height: 20px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      // z-index: 1000
+      &-line
+        width: 100%
+        height: 3px
+        background-color: $text-color-dark
+  .main
+    &__slide
+      &-container
+        margin-top: 30px
+        flex-direction: column
+        align-items: center
+      &-left
+        margin-bottom: 30px
+        max-width: 308px
+        display: flex
+        flex-direction: column
+        align-items: center
+      &-title
+        font-size: 26px
+        line-height: 28px
+        text-align: center
+      &-subtitle
+        display: block
+        max-width: 200px
+        text-align: center
+      &-button
+        padding: 14px 16px
+      &-icon
+        width: 60px
+        height: 60px
+        margin: 0
+        margin-bottom: 10px
+      &-link
+        flex-direction: column-reverse
+        align-items: center
+        font-size: 16px
+    &__pagination
+      bottom: 20px !important
+  .facts
+    background-position: -100px
+    &__bg
+      display: none
+    &__wrapper
+      flex-direction: column
+      align-items: center
+    &__left
+      margin-bottom: 50px
+    &__list
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__tab
+      align-items: center
+      &-img
+        max-width: 207px
+      &-description
+        // max-width: 300px
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+  .catalog
+    &__top
+      flex-direction: column
+    &__title
+      margin-bottom: 20px
+    &__card
+      max-width: 100%
+      height: 270px
+      &:nth-last-child(2)
+        margin-bottom: 20px
+      &-bg
+        object-fit: cover
+        width: 100%
+        height: 100%
+        &_small
+          top: 0
+          left: 0
+  .team
+    padding: 60px 0
+    &__wrapper
+      flex-direction: column-reverse
+    &__img
+      max-width: 100%
+      height: auto
+    &__text
+      max-width: 480px
+  .footer
+    &::after
+      bottom: 125px
+    &__logo
+      margin-bottom: 20px
+    &__top
+      flex-direction: column
+    &__navbar
+      margin: 0
+    &__list
+      flex-direction: column
+      align-items: center
+      &-item
+        margin-bottom: 10px
+    &__contacts
+      align-items: center
+      &-phone
+        margin-bottom: 10px
+    &__bottom
+      padding-bottom: 25px
+      flex-direction: column
+      align-items: center
+    &__copy
+      margin-bottom: 10px
+    &__policy
+      margin: 0
+      
+

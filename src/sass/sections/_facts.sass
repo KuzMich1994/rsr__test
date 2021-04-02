@@ -1,0 +1,70 @@
+.facts
+  position: relative
+  height: 700px
+  background: url(../img/facts-bg.png)
+  background-repeat: no-repeat
+  background-position: 83px 0
+  // background-size: 100% 100%
+  &__bg
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    max-width: 1142px
+    width: 100%
+    max-height: 700px
+    z-index: -1
+  &__wrapper
+    padding-top: 120px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &__title
+    margin: 0
+    margin-bottom: 70px
+    font-weight: 600
+    font-size: 32px
+    line-height: 44px
+  &__list
+    &-item
+      margin-bottom: 38px
+      font-weight: normal
+      font-size: 18px
+      line-height: 25px
+      color: #A5A5A5
+      &:last-child
+        margin-bottom: 0
+      &_active
+        margin-bottom: 23px
+        margin-left: 40px
+        position: relative
+        font-weight: bold
+        font-size: 24px
+        line-height: 33px
+        color: #CD202C
+        &::before
+          position: absolute
+          top: 17px
+          left: -40px
+          content: ''
+          width: 30px
+          height: 2px
+          background-color: #CD202C
+  &__tab
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    &-img
+      // margin-left: 70px
+      margin-bottom: 50px
+      max-width: 309px
+      max-height: 240px
+    &-description
+      margin: 0
+      margin-bottom: 20px
+      max-width: 680px
+      font-weight: normal
+      font-size: 18px
+      line-height: 25px
+      &:last-child
+        margin-bottom: 0
